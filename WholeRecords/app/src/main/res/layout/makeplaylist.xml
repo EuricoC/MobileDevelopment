@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_pressed"
+    tools:context=".MakePlaylist">
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Back"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="149dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Back"
+        app:srcCompat="@drawable/logo"
+        tools:src="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="99dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:ems="10"
+        android:hint="Playlist name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <Button
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="162dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Create"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="156dp"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:foreground="@android:drawable/ic_input_add"
+        android:foregroundTint="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

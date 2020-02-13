@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_pressed"
+    tools:context=".Home">
+
+    <Button
+        android:id="@+id/Home"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:text="Home"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        app:layout_constraintEnd_toStartOf="@+id/Search"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:backgroundTint="@android:color/background_dark"
+        android:text="Log Out"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Submit" />
+
+    <Button
+        android:id="@+id/makeP"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="New Playlist"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/Search"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="@android:string/search_go"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toStartOf="@+id/Submit"
+        app:layout_constraintStart_toEndOf="@+id/Home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/common_google_signin_btn_text_dark_focused"
+        android:text="Submit Song"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Search"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="397dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="35dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Home"
+        app:srcCompat="@drawable/logo"
+        tools:src="@drawable/logo"
+        tools:srcCompat="@drawable/logo" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/makeP" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

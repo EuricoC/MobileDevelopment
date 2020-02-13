@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "870834386059",
+    "firebase_url": "https://wholerecords-25821.firebaseio.com",
+    "project_id": "wholerecords-25821",
+    "storage_bucket": "wholerecords-25821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870834386059:android:fbc0c646ffb2203c45908e",
+        "android_client_info": {
+          "package_name": "com.example.wholerecords"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870834386059-htra4jlliko3ff86772v92ptqg4iv3b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKvWSaJ2loBaty8_PsAVbydqWRHHaF9hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870834386059-htra4jlliko3ff86772v92ptqg4iv3b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

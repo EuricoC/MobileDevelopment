@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/b"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/b"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/c"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginBottom="-5dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="TextView"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/c2"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+    <TextView
+        android:id="@+id/c2"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="-5dp"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:text="  Songs:"
+        android:textColor="@android:color/holo_orange_dark"
+        app:layout_constraintStart_toEndOf="@+id/a"
+        app:layout_constraintTop_toBottomOf="@+id/b" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
